@@ -57,22 +57,43 @@ int main(){
 
 
 
+//  method - 1:
+    // int n = 15;
+    
+    // bool isPrime= true;
+
+    // for(int i=2; i <= n-1 ; i++){
+
+    //     if(n%i ==0 ){
+    //         isPrime = false;
+    //         break;
+    //     }
+    //     cout << i <<"\n";
+
+    // }
+    // isPrime == 1 ? cout<< "Youre goddamn right" : cout<< "stfu" ;
 
 
-    int n = 15;
+
+
+    // method-2 : more efficient
+
+
+    int n = 19;
     
     bool isPrime= true;
 
-    for(int i=2; i <= n-1 ; i++){
+    for(int i=2; i*i <= n ; i++){
 
+        cout << i <<"    ---- before if\n";
         if(n%i ==0 ){
             isPrime = false;
             break;
         }
-        cout << i <<"\n";
+        cout << i <<"   ----after if\n";
 
     }
-    isPrime == 1 ? cout<< "Youre goddamn right" : cout<< "stfu" ;
+    isPrime == 1 ? cout<< "Youre goddamn right its PRIME" : cout<< "stfu its not PRIME" ;
 
     return 0;
 }
