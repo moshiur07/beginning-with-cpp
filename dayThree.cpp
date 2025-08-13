@@ -20,33 +20,59 @@ int main(){
 
 //  Objective-2: i need the some of all the odd number from 0 to n using while loop
 
-    int n = 10 ;
+    // int n = 10 ;
     // cout<<"enter of the value of N : ";
     // cin >> n ;
-    int oddSum=0;
-    int i=0;
-    while(i<=n){
+    // int oddSum=0;
+    // int i=0;
+    // while(i<=n){
 
-        if(i%2 != 0){
-            oddSum += i ;
-        }
-        i++;
-    }
-    cout << "The sum of all odd number from 0 to N is : " << oddSum << "\n";
+    //     if(i%2 != 0){
+    //         oddSum += i ;
+    //     }
+    //     i++;
+    // }
+    // cout << "The sum of all odd number from 0 to N is : " << oddSum << "\n";
 
  
-//  Objective-2: i need the some of all the even number from 0 to n using for loop 
+//  Objective-3: i need the some of all the even number from 0 to n using for loop 
 
 
-    int evenSum= 0 ;
-    for (int i = 0 ; i <= n ; i++)
-    {
-        if(i%2 == 0 ){
-            evenSum +=i ;
-        }
-    }
-    cout <<"The sum of all even number from 0 to N is :"<< evenSum ;
+    // int evenSum= 0 ;
+    // for (int i = 0 ; i <= n ; i++)
+    // {
+    //     if(i%2 == 0 ){
+    //         evenSum +=i ;
+    //     }
+    // }
+    // cout <<"The sum of all even number from 0 to N is :"<< evenSum ;
+
+
+
+
+
+
+
+    // Objective -4 : check if a number isPrime or not
+
+
+
+
+
+    int n = 15;
     
+    bool isPrime= true;
+
+    for(int i=2; i <= n-1 ; i++){
+
+        if(n%i ==0 ){
+            isPrime = false;
+            break;
+        }
+        cout << i <<"\n";
+
+    }
+    isPrime == 1 ? cout<< "Youre goddamn right" : cout<< "stfu" ;
 
     return 0;
 }
